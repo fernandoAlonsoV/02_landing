@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "sass src/scss dist/css",
-    "watch-css": "sass --watch src/scss:dist/css"
+    "watch-css": "sass --watch assets/scss:dist/css"
   },
   "keywords": [],
   "author": "Fernando Alonso",
