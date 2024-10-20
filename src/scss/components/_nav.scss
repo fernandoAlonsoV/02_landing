@@ -1,0 +1,40 @@
+.menu {
+  display: inline-flex;
+  margin: 50px;
+  &__item {
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+  &__link {
+    color: #ffff;
+    text-decoration: none;
+    &--signUp {
+      position: absolute;
+      top: 40px;
+      right: 80px;
+      text-decoration: inherit;
+      color: #ffff;
+      border: 2px solid transparent;
+      border-radius: 20px;
+      background-image: linear-gradient(
+        to right top,
+        #051937,
+        #004d7a,
+        #008793,
+        #00bf72,
+        #a8eb12
+      );
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+    }
+    &--signUp span {
+      display: block;
+      padding: 8px 22px;
+    }
+  }
+}
+
+.active {
+  color: #41f2e1;
+}

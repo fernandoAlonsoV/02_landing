@@ -1,17 +1,147 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 4 | @import "./components/";
- *   |         ^^^^^^^^^^^^^^^
- *   '
- *   src\scss\style.scss 4:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 4 \2502  @import \"./components/\";\d\a   \2502          ^^^^^^^^^^^^^^^\a   \2575 \a   src\\scss\\style.scss 4:9  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #0c1d40;
+}
+
+.menu {
+  display: inline-flex;
+  margin: 50px;
+}
+.menu__item {
+  list-style: none;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.menu__link {
+  color: white;
+  text-decoration: none;
+}
+.menu__link--signUp {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  text-decoration: inherit;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.menu__link--signUp span {
+  display: block;
+  padding: 8px 22px;
+}
+
+.active {
+  color: #41f2e1;
+}
+
+.banner {
+  width: 80%;
+  height: 70%;
+  top: 25%;
+  left: 130px;
+  position: absolute;
+  color: #fff;
+}
+.banner__content--left {
+  width: 50%;
+  float: left;
+}
+.banner__content--left h1 {
+  font-size: 43px;
+  width: 640px;
+  position: relative;
+  margin-left: 40px;
+}
+.banner__content--left p {
+  font-size: 15px;
+  width: 650px;
+  margin: 30px 0 30px 40px;
+  line-height: 25px;
+}
+.banner__content--left .play-btn {
+  height: 50px;
+  width: 50px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  text-align: center;
+}
+.banner__content--left .play-btn-inner .fa {
+  padding: 18px 0;
+  font-size: 13px;
+  cursor: pointer;
+}
+.banner__content--right {
+  width: 50%;
+  float: right;
+}
+.banner__content--right img {
+  width: 100%;
+  margin-top: -5%;
+  padding-left: 50px;
+}
+
+small {
+  margin: auto 20px;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: #41f2e1;
+}
+
+.quick-links {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: linear-gradient(to right, #008793, #a8eb12);
+}
+.quick-links ul {
+  display: inline-flex;
+  margin: 30px auto;
+  text-align: center;
+}
+.quick-links ul li {
+  list-style: none;
+  margin: 0 50px;
+  cursor: pointer;
+}
+.quick-links ul li .fa {
+  font-size: 25px;
+  color: white;
+}
+.quick-links ul li p {
+  margin-top: 15px;
+  color: white;
+}
+
+.social-icons {
+  right: 72px;
+  bottom: 35px;
+  position: absolute;
+}
+.social-icons ul li {
+  list-style: none;
+  margin-top: 15px;
+  text-align: center;
+}
+.social-icons ul li a {
+  color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5px;
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */
