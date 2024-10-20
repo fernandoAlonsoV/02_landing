@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-css": "sass --watch assets/scss:dist/css"
+    "build-css": "sass src/scss dist/css",
+    "sass": "sass --watch src/scss:dist/css"
   },
   "keywords": [],
   "author": "Fernando Alonso",

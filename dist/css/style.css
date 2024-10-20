@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -55,6 +56,7 @@
 .banner__content--left {
   width: 50%;
   float: left;
+  position: relative;
 }
 .banner__content--left h1 {
   font-size: 43px;
@@ -69,6 +71,13 @@
   line-height: 25px;
 }
 .banner__content--left .play-btn {
+  margin-left: 40px;
+  display: inline-flex;
+}
+.banner__content--left .play-btn-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 50px;
   width: 50px;
   border: 2px solid transparent;
@@ -78,9 +87,8 @@
   background-clip: content-box, border-box;
   text-align: center;
 }
-.banner__content--left .play-btn-inner .fa {
-  padding: 18px 0;
-  font-size: 13px;
+.banner__content--left .play-btn-inner .bi {
+  font-size: 25px;
   cursor: pointer;
 }
 .banner__content--right {
@@ -88,17 +96,18 @@
   float: right;
 }
 .banner__content--right img {
-  width: 100%;
+  width: 120%;
   margin-top: -5%;
-  padding-left: 50px;
+  margin-left: -15%;
 }
 
 small {
   margin: auto 20px;
   cursor: pointer;
   font-size: 12px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   color: #41f2e1;
+  font-weight: 400;
 }
 
 .quick-links {
@@ -138,8 +147,6 @@ small {
 }
 .social-icons ul li a {
   color: white;
-  border-radius: 50%;
-  border: 1px solid white;
   padding: 5px;
   display: block;
 }

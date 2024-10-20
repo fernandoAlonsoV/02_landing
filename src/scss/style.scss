@@ -1,7 +1,7 @@
-@import "./base/variables";
-@import "./base/normalize";
-@import "./config/mixins";
-@import "./components/container";
-@import "./components/nav";
-@import "./components/banner";
-@import "./components/footer";
+@use "./base/variables";
+@use "./base/normalize";
+@use "./config/mixins";
+@use "./components/container";
+@use "./components/nav";
+@use "./components/banner";
+@use "./components/footer";
